@@ -1,7 +1,12 @@
 @import "reset";
 @import "modules/items";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 @import "devise/new";
 
 body{
   background-color: rgb(245, 245, 245);
 }
+
