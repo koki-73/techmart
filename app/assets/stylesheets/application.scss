@@ -1,2 +1,7 @@
 @import "reset";
-@import "modules/items"
+@import "modules/items";
+@import "devise/new";
+
+body{
+  background-color: rgb(245, 245, 245);
+}
