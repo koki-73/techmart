@@ -1,0 +1,55 @@
+.header{
+  height: 120px;
+  width: 100vw;
+  &__content{
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 8px;
+    &__menu{
+      display: flex;
+      
+      &__title{
+        font-size: 25px;
+        text-decoration: none;
+        margin-right: 45px;
+      }
+      &__search_form{
+        width: 100%;
+        .input_box{
+          display: flex;
+          width: 100%;
+          position: relative;
+          &__form{
+            height: 30px;
+            width: 100%;
+            font-size: 15px;
+          }
+          &__btn{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+        }
+      }
+    }
+    &__bottom{
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between;
+      .category_box{
+        display: flex;
+        .category{
+          height: 50px;
+          width: 100px;
+          background-color: black;
+          margin-right: 20px;
+        }
+        .brand{
+          height: 50px;
+          width: 100px;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
