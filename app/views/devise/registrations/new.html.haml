@@ -34,5 +34,31 @@
                 %h6.required-icon__text 必須
             .field__input
               = f.password_field :password_confirmation, autocomplete: "off", placeholder: "上のパスワードと同じものを入力してください", class: "field__input__box"
+          .identification
+            .identification__title
+              %h3 本人確認
+            .identification__text
+              %h5 安心・安全にご利用いただくために、お客さまの本人情報の登録にご協力ください。他のお客さまに公開されることはありません。
+          .field
+            .field__label
+              %h5.field__label__text お名前(全角)
+              .required-icon
+                %h6.required-icon__text 必須
+            .field__input-twins
+              .field__input-twins__left
+                = f.email_field :email, placeholder: "例) 技術", class: "field__input-twins__left__box"
+              .field__input-twins__right
+                = f.email_field :email, placeholder: "例) 名人", class: "field__input-twins__right__box"
+          .field
+            .field__label
+              %h5.field__label__text お名前カナ(全角)
+              .required-icon
+                %h6.required-icon__text 必須
+            .field__input-twins
+              .field__input-twins__left
+                = f.email_field :email, placeholder: "例) テック", class: "field__input-twins__left__box"
+              .field__input-twins__right
+                = f.email_field :email, placeholder: "例) エキスパート", class: "field__input-twins__right__box"
+              -# 名前の登録先のカラムは未定
           .actions
             = f.submit "登録する", class: 'btn'
