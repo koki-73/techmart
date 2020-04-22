@@ -24,10 +24,13 @@
             width: 100%;
             font-size: 15px;
           }
-          &__btn{
+          &__label{
             position: absolute;
-            top: 10px;
+            top: 6px;
             right: 10px;
+            &__btn{
+              display: none;
+            }
           }
         }
       }
@@ -48,6 +51,36 @@
           height: 50px;
           width: 100px;
           background-color: black;
+        }
+      }
+      .user_box{
+        &__off{
+          .sign_up_btn{
+            display       : inline-block;
+            font-size     : 12pt;
+            text-align    : center;
+            cursor        : pointer;
+            padding       : 12px 12px;
+            background    : #ff0000;
+            color         : #ffffff;
+            line-height   : 1em;
+            transition    : .3s; 
+            text-decoration: none;
+          }
+          .login_btn{
+            display       : inline-block;
+            border-radius : 5%;
+            font-size     : 12pt;
+            text-align    : center;
+            cursor        : pointer;
+            padding       : 12px 12px;
+            background    : #ffffff;
+            color         : #00ffff;
+            line-height   : 1em;
+            transition    : .3s;
+            text-decoration: none;
+            border: solid 1px #00ffff;
+          }
         }
       }
     }
