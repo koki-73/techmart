@@ -81,3 +81,31 @@
   background-color: #ea352d;
   color: white;
 }
+.birthday-wrap{
+  display: flex;
+  &__text{
+    line-height: 40px;
+    padding-left: 3px;
+  }
+  &__select-year{
+    height: 40px;
+    &__box{
+      height: 100%;
+      width: 100px;
+    }
+  }
+  &__select-month{
+    height: 40px;
+    &__box{
+      height: 100%;
+      width: 100px;
+    }
+  }
+  &__select-day{
+    height: 40px;
+    &__box{
+      height: 100%;
+      width: 100px;
+    }
+  }
+}
