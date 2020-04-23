@@ -1,0 +1,40 @@
+.user-details {
+  width: 700px;
+  height: 100vh;
+  background-color: lightblue;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .user-detail-profile-box {
+    .user-detail-photo-box {
+
+    }
+  }
+  .user-rate-area {
+
+  }
+  .social-media-box {
+
+  }
+
+}
+
+.items-box-container {
+  .items-box-head {
+
+  }
+  .items-box-content {
+    .items-box {
+      &__photo {
+
+      }
+      &__body {
+
+      }
+    }
+  }
+}
+
+.sell-btn {
+  @include sell-btn;
+}
