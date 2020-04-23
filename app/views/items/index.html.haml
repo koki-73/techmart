@@ -1,2 +1,17 @@
-%h1 Items#index
-%p Find me in app/views/items/index.html.haml
+.items-index
+  .category-bar
+    .category-bar__box
+      %h1.category-bar__text 人気のカテゴリー
+      .category-bar__links
+        =link_to "#", class: "category-bar__links__link" do
+          .category-bar__links__link__btn
+            レディース
+        =link_to "#", class: "category-bar__links__link" do
+          .category-bar__links__link__btn
+            メンズ
+        =link_to "#", class: "category-bar__links__link" do
+          .category-bar__links__link__btn
+            家電・スマホ・カメラ
+        =link_to "#", class: "category-bar__links__link" do
+          .category-bar__links__link__btn
+            おもちゃ・ホビー・グッズ
