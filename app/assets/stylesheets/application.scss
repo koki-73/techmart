@@ -1,18 +1,21 @@
 @import "reset";
-@import "modules/items";
+
+@import "modules/mixin";
+
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
+@import "modules/items";
 @import "devise/new";
+@import "modules/user-show";
 @import "items/index";
 
 
-// html{
-//   width: 100%;
-//   height: 100%;
-// }
 body{
   background-color: rgb(245, 245, 245);
-  // width: 100%;
-  // height: 100%;
 }
+
+// * {
+//   box-sizing: border-box;
+// }
 

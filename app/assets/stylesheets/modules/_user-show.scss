@@ -1,0 +1,131 @@
+.users-details {
+  width: 700px;
+  height: 100vh;
+  background-color: lightblue;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  .users-detail-profile-box {
+    text-align: center;
+    padding-top: 50px;
+    .users-detail-photo-box {
+      .users-detail-photo {
+        width: 180px;
+        height: 180px;
+        background-color: slategrey;
+        border-radius: 50%;
+        margin: 0 auto;
+      }
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+      h2 {
+        margin-top: 8px;
+        margin-bottom: 16px;
+        font-size: 18px;
+      }
+    }
+  }
+  .users-score {
+    padding-bottom: 30px;
+    font-size: 12px;
+    span {
+      margin-right: 18px;
+    }
+  }
+  .users-rate-area {
+    width: 700px;
+    height: 36px;
+    background-color: #fff;
+    // padding-top: 4px;
+    padding: 4px 170px 0;
+    margin: 0 auto;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    .good-icon {
+      font-size: 24px;
+      color: #ef5185;
+    }
+    .normal-icon {
+      font-size: 24px;
+      color: #fba933;
+    }
+    .bad-icon {
+      font-size: 24px;
+      color: #6ab5d8;
+    }
+    span {
+      display: inline-block;
+      width: 60px;
+      text-align: center;
+      margin-left: 14px;
+    }
+
+  }
+  .social-media-box {
+    margin: 24px auto;
+    padding: 32px 0 24px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      width: 44px;
+      height: 44px;
+      border-radius: 4px;
+      margin-right: 8px;
+      .facebook-icon, .twitter-icon, .line-icon {
+        color: #fff;
+      }
+    }
+    a.facebook {
+      background-color: #385185;
+    }
+    a.twitter {
+      background-color: #5d9dc9;
+    }
+    a.line {
+      background-color: #00c137;
+    }
+  }
+
+}
+
+.items-box-container {
+  background-color: #fff;
+  h2.items-box-head {
+    font-size: 22px;
+    margin: 24px 0 8px;
+  }
+  .items-box-content {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 330px);
+    grid-template-columns: 220px 220px 220px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .items-box {
+      position: relative;
+      a {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+      }
+      &__photo {
+        width: 220px;
+        height: 220px;
+        background-color: wheat;
+      }
+      &__body {
+        padding: 16px;
+        background-color: whitesmoke;
+      }
+    }
+  }
+}
+
+.sell-btn {
+  @include sell-btn;
+}
