@@ -1,8 +1,10 @@
 .header{
   height: 120px;
   width: 100vw;
+  background-color: white;
+  border-bottom: solid 1px rgb(170, 169, 169);
   &__content{
-    width: 700px;
+    width: 800px;
     margin: 0 auto;
     padding-top: 8px;
     &__menu{
@@ -23,6 +25,7 @@
             height: 30px;
             width: 100%;
             font-size: 15px;
+            padding-left: 5px;
           }
           &__label{
             position: absolute;
@@ -41,17 +44,28 @@
       justify-content: space-between;
       .category_box{
         display: flex;
+        margin-top: 10px;
         .category{
-          height: 50px;
-          width: 100px;
-          background-color: black;
-          margin-right: 20px;
+          margin-right: 5px;
+        }
+        .category_title{
+          text-decoration: none;
+          font-size: 14px;
+          color: black;
+          font-weight: bold;
+          margin-right: 10px;
         }
         .brand{
-          height: 50px;
-          width: 100px;
-          background-color: black;
+          margin-right: 5px;
         }
+        .brand_title{
+          text-decoration: none;
+          font-size: 14px;
+          color: black;
+          font-weight: bold;
+          
+        }
+        
       }
       .user_box{
         &__off{
