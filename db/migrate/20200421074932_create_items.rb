@@ -5,7 +5,7 @@ class CreateItems < ActiveRecord::Migration[5.2]
       t.integer :price,                     null: false
       t.enum :status,                       null: false
       t.references :brand,                  foreign_key: true
-      t.references :buyer,                  foreign_key: true
+      t.references :buyer_id,                  foreign_key: true
       t.references :shopping_cost,          null: false,  foreign_key: true
       t.references :category,               null: false, foreign_key: true
       t.references :user,                   null: false, foreign_key: true
