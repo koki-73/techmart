@@ -1,14 +1,18 @@
 @import "reset";
 @import "modules/mixin";
-@import "modules/items";
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
+@import "modules/items";
 @import "devise/new";
 @import "modules/user-show";
 
 body{
   background-color: rgb(245, 245, 245);
+}
+
+* {
+  box-sizing: border-box;
 }
 
