@@ -1,3 +1,7 @@
+.items-index{
+  height: 100%;
+  width: 100%;
+}
 .category-bar{
   height: 120px;
   width: 100%;
@@ -26,6 +30,83 @@
       text-decoration: none;
       color: black;
       border-radius: 15px;
+    }
+  }
+}
+.category-items{
+  width: 80vh;
+  margin: 0 auto;
+  &__area{
+    padding-bottom: 50px;
+    &__texts{
+      display: flex;
+      justify-content: space-between;
+      &__text{
+        font-size: 25px
+      }
+      &__more{
+        text-decoration: none;
+        font-size: 15px;
+        color: rgb(77, 167, 226);
+        padding-top: 5px;
+      }
+    }
+    &__images{
+      height: 400px;
+    }
+  }
+}
+.brand-bar{
+  height: 120px;
+  width: 100%;
+  background-color: white;
+  margin: 30px 0;
+  padding-top: 50px;
+  &__box{
+  }
+  &__text{
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+    width: 230px;
+    margin: 0 auto;
+    font-family: Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
+    margin-bottom: 10px;
+  }
+  &__links{
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    &__link{
+      background-color: rgb(245, 245, 245);
+      margin-right: 10px;
+      padding: 3px 5px;
+      text-decoration: none;
+      color: black;
+      border-radius: 15px;
+    }
+  }
+}
+.brand-items{
+  width: 80vh;
+  margin: 0 auto;
+  &__area{
+    padding-bottom: 50px;
+    &__texts{
+      display: flex;
+      justify-content: space-between;
+      &__text{
+        font-size: 25px
+      }
+      &__more{
+        text-decoration: none;
+        font-size: 15px;
+        color: rgb(77, 167, 226);
+        padding-top: 5px;
+      }
+    }
+    &__images{
+      height: 400px;
     }
   }
 }
