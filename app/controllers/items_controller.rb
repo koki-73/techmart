@@ -6,5 +6,6 @@ class ItemsController < ApplicationController
 
 
   end
-
+  def show
+  end
 end

@@ -1,0 +1,182 @@
+.item__detail{
+  box-sizing: border-box;
+  width: 700px;
+  height: 1088px;
+  margin: 40px auto 0;
+  background-color: #fff;
+  padding: 24px 40px 40px;
+  .item__name{
+    color: #333333;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 24px;
+    font-weight: bold;
+    word-wrap: break-word;
+    font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+  }
+  .item__main__content{
+    width: 620px;
+    height: 420px;
+    margin: 16px 0 0;
+    .item__photo{
+      float: left;
+      width: 300px;
+      height: 420px;
+      &__main{
+      width: 300px;
+      height: 300px;
+      }
+      &__sub{
+        width: 300px;
+        height: 120px;
+      }
+    }
+    .item__detail__table{
+      float: right;
+      width: 300px;
+      height: 420px;
+      max-width: 360px;
+      color: #333333;
+      border-collapse: collapse;
+      font-size: 14px;
+      font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+    }
+    table{
+      width: 300px;
+      height: 420px;
+    }
+    th{
+      background-color: #f5f5f5;
+      padding-left: 10px;
+      border: 1px solid #f5f5f5;
+    }
+    td{
+      padding-left: 10px;
+      border: 1px solid #f5f5f5;
+    }
+  }
+  .item__price__box{
+    margin-top: 24px;
+    text-align: center;
+    color: #333333;
+    font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+    .item__price{
+      font-weight: 600;
+      margin-right: 16px;
+      font-size: 50px;
+    }
+    .item__tax{
+      font-size: 10px;
+    }
+    .item-shipping__fee{
+      font-size: 16px;
+    }
+  }
+  .item__buy__btn{
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+    width: 620px;
+    height: 60px;
+    margin-top: 16px;
+    background-color: #ea352d;
+    color: #fff;
+    font-size: 24px;
+    line-height: 60px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .item__description{
+    padding-top: 32px;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', Helvetica , Arial, '游ゴシック体', 'YuGothic', 'メイリオ', 'Meiryo', sans-serif;
+    color: #333333;
+    .item__description__inner{
+      white-space: pre-wrap;
+    }
+  } 
+  .item__button__container{
+    margin-top: 16px;
+    .item__button__left{
+      float: left;
+      height: 33px;
+      .item__button{
+        display: inline-block;
+        padding: 8px 16px;
+        border-radius: 40px;
+      }
+      .item__button__like{
+        color: #333;
+        border: 1px solid #f5f5f5;
+        background: #f5f5f5;
+      }
+      .fa-heart{
+        color: #ccc;
+        font-size: 14px;
+      }
+      .item__button__report{
+        margin-left: 16px;
+        background-color: #f5f5f5;
+        color: #333;
+        .fa-flag{
+          font-size: 14px;
+        }
+      }
+    }
+    .item__button__right{
+      margin: 8px 0 0;
+      float: right;
+      color: #0099e8;
+      .fa-lock{
+        font-size: 14px;
+      }
+    }
+    span{
+      font-size: 14px;
+      margin: 1px 0 0 8px;
+    }
+    a{
+      text-decoration: none;
+    }
+  }
+}
+.item__message{
+  width: 700px;
+  margin: 8px auto;
+  .message__container{
+    .message__content{
+      padding: 24px 7.5%;
+      background: #fff;
+      .message__form{
+        p{
+          padding: 8px;
+          font-size: 14px;
+          background: #fff6de;
+        }
+        .textarea__default{
+          margin-top: 8px;
+          width: 573px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          background: #fff;
+          font-size: 16px;
+          line-height: 1.5;
+          max-width: 100%;
+          min-height: 104px;
+        }
+        .massage__submit{
+          width: 582.25px;
+          height: 51.61px;
+          margin-top: 8px;
+          width: 100%;
+          background: #aaa;
+          border: 1px solid #aaa;
+          color: #fff;
+          span{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.item__detail
+  %h1.item__name プラダ  リュック  レッド
+  .item__main__content
+    .item__photo
+      .item__photo__main
+      .item__photo__sub
+    .item__detail__table
+      %table{border: "1"}
+        %tr 
+          %th 出品者
+          %td
+        %tr 
+          %th カテゴリー
+          %td
+        %tr 
+          %th ブランド
+          %td  
+        %tr 
+          %th 商品の状態
+          %td 傷や汚れあり
+        %tr 
+          %th 配送料の負担
+          %td 送料込み(出費者負担)
+        %tr 
+          %th 配送の方法
+          %td らくらくメルカリ便
+        %tr 
+          %th 配送元地域
+          %td 愛知県
+        %tr 
+          %th 発送日の目安
+          %td 1~2日で発送
+  .item__price__box
+    %span.item__price ￥8,800
+    %span.item__tax (税込)
+    %span.item-shipping__fee 送料込み
+  %a.item__buy__btn{href: "#"} 購入画面に進む
+  .item__description
+    %p.item__description__inner 
+      20年くらい前に購入。
+      使用感あり、汚れがあります。写真をご覧ください。
+      破れなどはなく、まだまだ使って頂ける商品です。
+      名古屋にあるセレクトショップで購入しました。
+
+      サイズは写真で確認してください。
+
+      自宅で素人が長期保管していたことをご理解頂ける方、よろしくお願い致します。
+
+      コンパクトに折りたたんで発送致します。
+
+      返品はお受けしかねます。ご了承ください。
+
+  .item__button__container
+    .item__button__left
+      %button.item__button.item__button__like{"data-ga": "element", "data-ga-category": "LIKE", "data-ga-label": "like!", "data-id": "#", "data-toggle": "like", name: "like!", type: "button" }
+        %i.far.fa-heart 
+        %span いいね!
+        %span.fade-in-down{"data-num": "like"} 10
+      %a.item__button.item__button__report{href: "#"}
+        %i.far.fa-flag
+        %span 不適切な商品の報告
+    %a.item__button__right{href: "#"}
+      %i.fas.fa-lock
+      %span あんしん・あんぜんへの取り組み
+
+.item__message
+  .message__container
+    .message__content
+      %form.message__form{action: "#", method: "POST"}
+        %p 相手のことを考え丁寧なコメントを心がけましょう。不快な言葉遣いなどは利用制限や退会処分となることがあります。
+        %textarea.textarea__default{name: "body", type: "text", value: ""}
+        %button.massage__submit.btn__gray{type: "submit"}
+          %span コメントする
