@@ -23,9 +23,5 @@
         -#     = link_to  "投稿する", new_post_path, class: "header__btn__post",class: 'header__btn__all'
         -# - else
         .user_box__off
-          = link_to "新規会員登録", '#', class: 'sign_up_btn'
-          = link_to "ログイン", '#', class: 'login_btn'
-
-
-
-         
+          = link_to "新規会員登録", '/users/sign_up', class: 'sign_up_btn'
+          = link_to "ログイン", '/users/sign_in', class: 'login_btn'
