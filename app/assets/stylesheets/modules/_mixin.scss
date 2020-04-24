@@ -1,0 +1,24 @@
+@mixin sell-btn {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  right: 32px;
+  bottom: 32px;
+  background-color: #ea352d;
+  position: fixed;
+  z-index: 1000;
+  text-align: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #fff;
+  div {
+    margin-top: 32px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .camera-icon {
+    font-size: 54px;
+    margin-top: 8px;
+    text-align: center;
+  }
+}

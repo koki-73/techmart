@@ -1,0 +1,102 @@
+.header{
+  height: 120px;
+  width: 100vw;
+  background-color: white;
+  border-bottom: solid 1px rgb(170, 169, 169);
+  &__content{
+    width: 800px;
+    margin: 0 auto;
+    padding-top: 8px;
+    &__menu{
+      display: flex;
+      
+      &__title{
+        font-size: 25px;
+        text-decoration: none;
+        margin-right: 45px;
+      }
+      &__search_form{
+        width: 100%;
+        .input_box{
+          display: flex;
+          width: 100%;
+          position: relative;
+          &__form{
+            height: 30px;
+            width: 100%;
+            font-size: 15px;
+            padding-left: 5px;
+          }
+          &__label{
+            position: absolute;
+            top: 6px;
+            right: 10px;
+            &__btn{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &__bottom{
+      display: flex;
+      margin-top: 20px;
+      justify-content: space-between;
+      .category_box{
+        display: flex;
+        margin-top: 10px;
+        .category{
+          margin-right: 5px;
+        }
+        .category_title{
+          text-decoration: none;
+          font-size: 14px;
+          color: black;
+          font-weight: bold;
+          margin-right: 10px;
+        }
+        .brand{
+          margin-right: 5px;
+        }
+        .brand_title{
+          text-decoration: none;
+          font-size: 14px;
+          color: black;
+          font-weight: bold;
+          
+        }
+        
+      }
+      .user_box{
+        &__off{
+          .sign_up_btn{
+            display       : inline-block;
+            font-size     : 12pt;
+            text-align    : center;
+            cursor        : pointer;
+            padding       : 12px 12px;
+            background    : #ff0000;
+            color         : #ffffff;
+            line-height   : 1em;
+            transition    : .3s; 
+            text-decoration: none;
+          }
+          .login_btn{
+            display       : inline-block;
+            border-radius : 5%;
+            font-size     : 12pt;
+            text-align    : center;
+            cursor        : pointer;
+            padding       : 12px 12px;
+            background    : #ffffff;
+            color         : #00ffff;
+            line-height   : 1em;
+            transition    : .3s;
+            text-decoration: none;
+            border: solid 1px #00ffff;
+          }
+        }
+      }
+    }
+  }
+}
