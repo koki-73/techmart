@@ -1,13 +1,10 @@
-* {
-  box-sizing: border-box;
-}
-  
 .item__detail{
   width: 700px;
   height: 1088px;
   margin: 40px auto 0;
   background-color: #fff;
   padding: 24px 40px 40px;
+  box-sizing: border-box;
   .item__name{
     text-align: center;
     line-height: 1.4;
