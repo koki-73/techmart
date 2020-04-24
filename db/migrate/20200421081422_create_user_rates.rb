@@ -4,7 +4,7 @@ class CreateUserRates < ActiveRecord::Migration[5.2]
 
       t.references :user, null:false, foreign_key: true
       t.references :item, null:false, foreign_key: true
-      t.string :rate, null:false, foreign_key: true
+      t.string :rate, null:false
       t.timestamps
     end
   end

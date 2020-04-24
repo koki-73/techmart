@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_23_090701) do
+ActiveRecord::Schema.define(version: 2020_04_23_090702) do
+
+  create_table "brands", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "categories", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -32,8 +38,8 @@ ActiveRecord::Schema.define(version: 2020_04_23_090701) do
     t.string "name", null: false
     t.integer "price", null: false
     t.integer "status", null: false
-    t.string "brand_id"
-    t.string "buyer_id"
+    t.string "brand_id", null: false
+    t.string "buyer_id", null: false
     t.string "delivery_payer_id", null: false
     t.bigint "category_id", null: false
     t.bigint "user_id", null: false
@@ -75,7 +81,7 @@ ActiveRecord::Schema.define(version: 2020_04_23_090701) do
   create_table "user_rates", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "item_id", null: false
-    t.text "rate", null: false
+    t.string "rate", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["item_id"], name: "index_user_rates_on_item_id"
