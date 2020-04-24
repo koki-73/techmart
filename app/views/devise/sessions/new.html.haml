@@ -1,21 +1,22 @@
-#account-page.account-page
-  .account-page__inner.clearfix
-    .account-page__inner--left.account-page__header
-      %h2 Log in
-      %h5 登録しているユーザーでログイン
-      = render "devise/shared/links"
-    .account-page__inner--right.user-form
-      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+.login
+  .login__page
+    .login__page__new
+      %h1.login__poge__new__text アカウントをお持ちでない方はこちら
+      .login__page__new__link
+        = link_to "/users/sign_up", class: "login__page__new__link__area" do
+          .login__page__new__link__area__box
+            %h1.login__page__new__link__area__box__text 新規会員登録
+    = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+      .field
+        .field-label
+          = f.label :email
+        .field-input
+          = f.email_field :email, autofocus: true
         .field
           .field-label
-            = f.label :email
+            = f.label :password
+            %i (英数字8文字以上)
           .field-input
-            = f.email_field :email, autofocus: true
-          .field
-            .field-label
-              = f.label :password
-              %i (英数字8文字以上)
-            .field-input
-              = f.password_field :password, autocomplete: "off"
-          .actions
-            = f.submit "Log in", class: 'btn'
+            = f.password_field :password, autocomplete: "off"
+        .actions
+          = f.submit "ログイン", class: 'btn'

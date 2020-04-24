@@ -1,0 +1,39 @@
+.login{
+  width: 100%;
+  padding: 50px 0;
+  height: 100vh;
+  &__page{
+    width: 500px;
+    margin: 0 auto ;
+    background-color: white;
+    &__new{
+      width: 280px;
+      padding: 30px;
+      display: block;
+      margin: 0 auto;
+      font-weight: bold;
+      border-bottom: 1.5px solid rgb(245, 245, 245);
+      &__text{
+        font-size: 10px;
+      }
+      &__link{
+        margin-top: 20px;
+        width: 280px;
+        &__area{
+          text-decoration: none;
+          &__box{
+            background-color: #0099e8;
+            border: 1px #0099e8;
+            height: 50px;
+            &__text{
+              line-height: 50px;
+              display: flex;
+              justify-content: center;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
