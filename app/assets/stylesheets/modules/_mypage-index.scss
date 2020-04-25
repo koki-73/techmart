@@ -1,0 +1,106 @@
+.mypage-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 24px auto 0;
+  padding: 0 0 40px;
+}
+.mypage-side-bar {
+  margin: 0 40px 0 0;
+  width: 280px;
+  nav.mypage-nav {
+    ul.mypage-nav-list {
+      li {
+        justify-content: space-between;
+        a {
+          display: block;
+          width: 100%;
+          min-height: 48px;
+          padding: 16px;
+          font-size: 14px;
+          text-decoration: none;
+          color: #333;
+          background: #fff;
+          border-top: 1px solid #eee;
+          position: relative;
+          .arrow-icon{
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            right: 16px;
+          }
+        }
+        a.list-item-head {
+          font-weight: 600;
+          background-color: #eeeeee;
+        }
+      } 
+      h3 {
+        margin: 40px 0 8px;
+      }
+    }
+  }
+}
+.mypage-main-content {
+  width: 700px;
+  section.mypage-user-icon {
+    height: 200px;
+    text-align: center;
+    background-image: image-url("background_sample2.jpg");
+    background-size: cover;
+    position: relative;
+    color: #333;
+    a {
+      display: block;
+      width: 100%;
+      position: absolute;
+      top: 30%;
+      text-decoration: none;
+      color: #333;
+    }
+    .mypage-user-photo {
+      width: 60px;
+      height: 60px;
+      background-color: slategrey;
+      border-radius: 50%;
+      margin: 0 auto;
+    }
+    span {
+      margin-right: 10px;
+    }
+    h2.user-name {
+      margin-top: 8px;
+    }
+  }
+  section.mypage-tab-notification-todo {
+    background-color: #fff;
+    ul.mypage-tabs {
+      height: 72px;
+      background: #eee;
+      display: flex;
+      text-align: center;
+      line-height: 72px;
+      li {
+        width: 50%;
+        a {
+          text-decoration: none;
+          color: #333;
+          font-weight: 600;
+        }
+      }
+      li.active {
+        background: #fff;
+        border-top: 2px solid #ea352d;
+      }
+    }
+    ul.mypage-tab-notification.tab-pane.active {
+      li {
+        a {
+          display: block;
+          padding: 16px;
+          color: #333;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
