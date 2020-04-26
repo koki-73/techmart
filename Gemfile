@@ -74,6 +74,8 @@ gem 'font-awesome-sass'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'jquery-rails'
+gem 'ancestry'
+gem 'payjp'
 
 group :production do
   gem 'unicorn'
