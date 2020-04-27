@@ -10,13 +10,17 @@
 @import "items/show";
 
 
-
 body{
   background-color: rgb(245, 245, 245);
   height: 100%;
 }
+
 @import "modules/footer"
 // * {
 //   box-sizing: border-box;
 // }
 
+
+* {
+  box-sizing: border-box;
+}
