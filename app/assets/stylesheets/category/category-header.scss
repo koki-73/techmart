@@ -1,0 +1,33 @@
+.category-header{
+  background-color: white;
+  height: 50px;
+  padding-left: 435px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.6);
+  &__box{
+    font-size: 13px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    &__root{
+      text-decoration: none;
+      color: black;
+    }
+    &__category-all{
+      text-decoration: none;
+      color: black;
+    }
+    &__category-1{
+      text-decoration: none;
+      color: black;
+    }
+    &__category-2{
+      text-decoration: none;
+      color: black;
+    }
+    &__category-3{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}

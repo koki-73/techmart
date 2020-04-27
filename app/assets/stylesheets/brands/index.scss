@@ -1,0 +1,98 @@
+.brands{
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  &__page{
+    width: 40%;
+    margin: 0 auto;
+    &__text{
+      font-size: 25px;
+      padding: 8px 15px;
+      font-family: "Source Sans Pro", Helvetica, Arial, 游ゴシック体, YuGothic, メイリオ, Meiryo, sans-serif;
+      font-weight: bold;
+    }
+    &__btn{
+      display: flex;
+      justify-content: space-between;
+      &__link{
+        text-decoration: none;
+        color: black;
+        &__chanel{
+          background-color: white;
+          width: 130px;
+          height: 40px;
+          border-radius: 8px;
+          box-shadow: 1px 1px 1px 1px rgba(44, 43, 43, 0.6);
+          &:hover{
+            background-color: #ea352d;
+            color: white;
+          }
+          &__text{
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+        &__nike{
+          background-color: white;
+          width: 130px;
+          height: 40px;
+          border-radius: 8px;
+          box-shadow: 1px 1px 1px 1px rgba(44, 43, 43, 0.6);
+          &:hover{
+            background-color: #ea352d;
+            color: white;
+          }
+          &__text{
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+        &__vuitton{
+          background-color: white;
+          width: 130px;
+          height: 40px;
+          border-radius: 8px;
+          box-shadow: 1px 1px 1px 1px rgba(44, 43, 43, 0.6);
+          &:hover{
+            background-color: #ea352d;
+            color: white;
+          }
+          &__text{
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+        &__supreme{
+          background-color: white;
+          width: 130px;
+          height: 40px;
+          border-radius: 8px;
+          box-shadow: 1px 1px 1px 1px rgba(44, 43, 43, 0.6);
+          &:hover{
+            background-color: #ea352d;
+            color: white;
+          }
+          &__text{
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+        &__adidas{
+          background-color: white;
+          width: 130px;
+          height: 40px;
+          border-radius: 8px;
+          box-shadow: 1px 1px 1px 1px rgba(44, 43, 43, 0.6);
+          &:hover{
+            background-color: #ea352d;
+            color: white;
+          }
+          &__text{
+            line-height: 40px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
