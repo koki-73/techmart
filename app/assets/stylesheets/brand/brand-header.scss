@@ -1,0 +1,25 @@
+.brand-header{
+  background-color: white;
+  height: 50px;
+  padding-left: 435px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.6);
+  &__box{
+    font-size: 13px;
+    line-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    &__root{
+      text-decoration: none;
+      color: black;
+    }
+    &__brands{
+      text-decoration: none;
+      color: black;
+    }
+    &__brand{
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
