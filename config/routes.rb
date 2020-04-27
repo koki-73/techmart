@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   resources :users, only: :show
   resources :my_pages, only: :index
   resources :items, only: :show
+  resources :categories, only: :show
   resources :brands, only: :index
+
 end
