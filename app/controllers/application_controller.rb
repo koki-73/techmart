@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+  include CommonActions
+  before_action :set_categories
   protect_from_forgery with: :exception
   # このコードがあると、Railsで生成されるすべてのフォームとAjaxリクエストにセキュリティトークンが自動的に含まれる。
   before_action :configure_permitted_parameters, if: :devise_controller?

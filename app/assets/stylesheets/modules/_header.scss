@@ -4,12 +4,12 @@
   background-color: white;
   border-bottom: solid 1px rgb(170, 169, 169);
   &__content{
-    width: 800px;
+    max-width: 1040px;
     margin: 0 auto;
-    padding-top: 8px;
+    padding: 0 60px;
     &__menu{
       display: flex;
-      
+      padding-top: 15px;
       &__title{
         font-size: 25px;
         text-decoration: none;
@@ -40,35 +40,25 @@
     }
     &__bottom{
       display: flex;
-      margin-top: 20px;
       justify-content: space-between;
-      .category_box{
+      .left_lists{
         display: flex;
         margin-top: 10px;
-        .category{
-          margin-right: 5px;
-        }
         .category_title{
           text-decoration: none;
           font-size: 14px;
           color: black;
-          font-weight: bold;
           margin-right: 10px;
-        }
-        .brand{
-          margin-right: 5px;
         }
         .brand_title{
           text-decoration: none;
           font-size: 14px;
           color: black;
-          font-weight: bold;
-          
         }
         
       }
-      .user_box{
-        &__off{
+      .right_lists{
+        .user_btn{
           .sign_up_btn{
             display       : inline-block;
             font-size     : 12pt;
