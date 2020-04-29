@@ -31,4 +31,4 @@
               %h6.items-new__page__main__explanation__texts__required__text
                 必須
           .items-new__page__main__explanation__form
-            1000文字まで入るフォーム
+            = form.text_area :name, placeholder: "商品の説明(必須 1,000文字以内)(色、素材、重さ、定価、注意点など)例)2010年頃に一万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいので", class: "items-new__page__main__name__form__bar"
