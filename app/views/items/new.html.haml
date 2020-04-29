@@ -1,0 +1,34 @@
+.items-new
+  .items-new__page
+    .items-new__page__image
+      .items-new__page__image__title
+        %h5.items-new__page__image__title__text
+          出品画像
+        .items-new__page__image__title__required
+          %h6.items-new__page__image__title__required__text
+            必須
+      .items-new__page__image__uploader
+        %h3.items-new__page__image__uploader__text
+          最大10枚までアップロードできます
+      .items-new__page__image__uploader__form
+        複数枚投稿できるフォームの作成をします
+    .items-new__page__main
+      = form_for @item do |form|
+        .items-new__page__main__name
+          .items-new__page__main__name__texts
+            %h5.items-new__page__main__name__texts__text
+              商品名
+            .items-new__page__main__name__texts__required
+              %h6.items-new__page__main__name__texts__required__text
+                必須
+          .items-new__page__main__name__form
+            = form.text_field :name, placeholder: "40文字まで", class: "items-new__page__main__name__form__bar"
+        .items-new__page__main__explanation
+          .items-new__page__main__explanation__texts
+            %h5.items-new__page__main__explanation__texts__text
+              商品説明
+            .items-new__page__main__explanation__texts__required
+              %h6.items-new__page__main__explanation__texts__required__text
+                必須
+          .items-new__page__main__explanation__form
+            = form.text_area :name, placeholder: "商品の説明(必須 1,000文字以内)(色、素材、重さ、定価、注意点など)例)2010年頃に一万円で購入したジャケットです。ライトグレーで傷はありません。あわせやすいので", class: "items-new__page__main__name__form__bar"
