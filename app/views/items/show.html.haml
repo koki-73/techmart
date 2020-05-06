@@ -62,7 +62,9 @@
               %a{href: "#"}
                 %i.fa.fa-flag 不適切な商品の通報
       .item__show__main__content__comment
-        %form.new__comment
+        .comment__content
+          //- @comments.each do |comement|
+        %form.new__comment{model: [@item, @comement], local: "true"}
           %textarea{required: "required", name: "comment", id: "id"}
           %p.noticeMsg 
             相手のことを考え丁寧なコメントを心がけましょう。

@@ -86,6 +86,8 @@
           display: flex;
           justify-content: space-between;
           margin-top: 10px;
+          opacity: 0.7;
+          
           .star__btn{
             &__detail{
               font-size: 16px;
@@ -93,6 +95,9 @@
               border-radius: 40px;
               color: #3CCACE;
               border: 1px solid #ffb340;
+              &:hover{
+                opacity: 0.7;
+              }
             }
           }
           .flag__btn{
@@ -102,6 +107,9 @@
               border-radius: 4px;
               border: 1px solid #333;            
               padding: 6px 10px;
+              &:hover{
+                opacity: 0.7;
+              }
               a{
                 color: #333;
               }
